@@ -24,7 +24,8 @@ namespace TestSerialization
         {
             JsConfig.Reset();
             CustomExt.ConfigureSerializer(_defaultSerializers.LocalDateSerializer);
-
+            //after registering custom serializers we need to refresh JsonReader
+            ServiceStack.Text.Json.JsonReader<TestPerson>.Refresh();
         }
 
         [OneTimeTearDown]
