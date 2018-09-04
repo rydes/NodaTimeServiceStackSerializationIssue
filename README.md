@@ -14,3 +14,4 @@ Then next OneTimeSetUp method is called for next test fixture. We register provi
 when the second test is fire Json reader use cached config with AbstractSerializer for noda type. In the 
 end we get null date value.
 
+To fix it we need to manual refresh JsonReader for Person type.
