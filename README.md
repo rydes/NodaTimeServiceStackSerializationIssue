@@ -1,5 +1,5 @@
-# NodaTimeServiceStackSerializationIssue
-NodaTime and ServiceStack serialization isssue
+# Noda Time ServiceStack Serialization Deserialization Issue
+NodaTime and ServiceStack serialization deserialization isssue
 
 Basicaly problem is that the JsConfig.Reset() doesn't really resets the configuration of ServiceStack.Text library to it's orginal state.
 In reset method we replace all registered serializers with some default 
